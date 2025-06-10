@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ECART WEBSITE</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <style>
+    /* Fixed height for carousel */
+    .carousel-inner {
+      height: 700px;
+    }
+
+    .carousel-img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+
+    /* Space below carousel */
+    .product-section {
+      padding: 20px;
+    }
+
+    /* Responsive product card container */
+    .product-cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .card {
+      width: 10rem;
+    }
+
+    /* Header spacing */
+    .header {
+      padding: 15px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="container header">
+    <div class="row align-items-center">
+      <div class="col"><img src="fp.jpg" width="70px" alt="Logo"></div>
+      <div class="col"><input type="search" class="form-control" placeholder="Search"></div>
+      <div class="col text-center">Cart</div>
+      <div class="col text-center">Login</div>
+      <div class="col text-center">Become a Seller</div>
+    </div>
+  </div>
+
+  <!-- Carousel -->
+  <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="10000">
+        <img src="image-1.jpg" class="d-block w-100 carousel-img" alt="Image 1">
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="image-2.jpg" class="d-block w-100 carousel-img" alt="Image 2">
+      </div>
+      <div class="carousel-item">
+        <img src="image-3.jpg" class="d-block w-100 carousel-img" alt="Image 3">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- Product Cards Section -->
+  <div class="product-section">
+    <div class="product-cards">
+      <div class="card">
+        <img src="dress-1.jpg" class="card-img-top" alt="Dress 1" height="200px">
+        <div class="card-body">
+          <h5 class="card-title">Aesthetics</h5>
+          <p class="card-text">Best cotton fabric.<br>Under ₹900</p>
+          <a href="#" class="btn btn-primary">Buy Now</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="dress-2.jpg" class="card-img-top" alt="Dress 2" height="200px">
+        <div class="card-body">
+          <h5 class="card-title">Wedding Wear</h5>
+          <p class="card-text">Some daily wear<br>Under ₹699</p>
+          <a href="#" class="btn btn-primary">Buy Now</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="dress-3.jpg" class="card-img-top" alt="Dress 3" height="200px">
+        <div class="card-body">
+          <h5 class="card-title">Casual Wear</h5>
+          <p class="card-text">Good for offices<br>Under ₹599</p>
+          <a href="#" class="btn btn-primary">Buy Now</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="dress-4.jpg" class="card-img-top" alt="Dress 4" height="200px">
+        <div class="card-body">
+          <h5 class="card-title">Regular Wear</h5>
+          <p class="card-text">Cotton fabric<br>Under ₹800</p>
+          <a href="#" class="btn btn-primary">Buy Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
